@@ -12,7 +12,6 @@ print("Investigate basic digital electonics.")
 print("Use the toggle switch to activate the red LED lamp.")
 print("Jumpers must be positioned on J1 as specified in activity.")
 while ghs.switches.push_button.is_off():
-    #investigate temperature service
     state = ghs.switches.toggle.get_state()
     if state == ghs.switches.SWITCH_ON:
         ghs.lamps.red.on()
